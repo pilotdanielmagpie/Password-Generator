@@ -12,9 +12,24 @@
    <div class="stuff"> 
      <h1>Generate a random password</h1>
      <h2>Be secure!</h2>
-     <input id="input-el"></input>
-     <button onclick="generate()" id="generate-button">Generate Password</button>
+     <h1 class="below" id="password"></h1>
+     <button onclick="generatePassword()" id="generate-button">Generate Password</button>
    </div>
-   <script type="text/javascript" src="script.js"></script>
+   
+   <script>
+      let inputEl = document.getElementById("password")
+let lettersArr = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+
+   function generatePassword() {
+         let text = "";
+         for (let i = 0; i < 12; i++) { 
+            text += lettersArr[Math.floor(Math.random() * lettersArr.length)];
+         }
+         inputEl.textContent = text; 
+      }
+
+
+</script>
 </body>
 </html>

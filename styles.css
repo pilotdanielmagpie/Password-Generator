@@ -10,7 +10,7 @@ h1 {
 }
 
 h2 {
-   color: red;
+   color: black;
    font-weight: bold;
 }
 
@@ -24,7 +24,7 @@ button {
 }
 
 .stuff {
-   border: 5px solid white;
+   border: 15px solid white;
    text-align: center;
    margin: 0;
    background: white;
@@ -33,6 +33,19 @@ button {
    transform: translateX(-50%);
    top: 50%;
    transform: translateY(-50%);
+}
+
+.below {
+   color: red;
+   text-align: center;
+   margin: 0;
+   position: absolute;
+   left: 40%;
+   transform: translateX(-50%);
+   top: 200%;
+   transform: translateY(-50%);
+   font-size: 75px;
+
 }
 
 
